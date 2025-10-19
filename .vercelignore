@@ -1,33 +1,51 @@
-# Ignore large static assets that are not needed for API endpoints
-static/videos/
-static/outputs/
+# ONLY include essential API files - ignore everything else
+*
+
+# Include only these essential files
+!api/
+!services/
+!config.py
+!requirements.txt
+!vercel.json
+!env.vercel.example
+
+# Explicitly exclude everything else
+static/
+templates/
 demo_outputs/
-*.mp4
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+venv/
+env/
+.env
+.env.*
+
+# Exclude all documentation and setup files
+*.md
+*.txt
+*.bat
+*.sh
+setup.*
+demo_*
+test_*
+
+# Exclude all media files
 *.png
 *.jpg
 *.jpeg
 *.gif
+*.mp4
+*.avi
+*.mov
+*.wav
+*.mp3
 
-# Ignore test files
-test_*.py
-test_*.png
-test_*.jpg
-
-# Ignore documentation files (keep only essential ones)
-DEPLOYMENT.md
-CHECKLIST.md
-FEATURES.md
-PROJECT_OVERVIEW.md
-PROJECT_SUMMARY.txt
-QUICKSTART.md
-START_HERE.md
-setup.bat
-setup.sh
-demo_generator.py
-
-# Local development files (not needed for production)
-templates/
-static/css/
-static/js/
+# Exclude original Flask app files
 app.py
 run.py
