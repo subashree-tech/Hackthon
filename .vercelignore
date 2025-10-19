@@ -24,3 +24,10 @@ START_HERE.md
 setup.bat
 setup.sh
 demo_generator.py
+
+# Local development files (not needed for production)
+templates/
+static/css/
+static/js/
+app.py
+run.py
