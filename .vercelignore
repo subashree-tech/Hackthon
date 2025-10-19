@@ -1,0 +1,26 @@
+# Ignore large static assets that are not needed for API endpoints
+static/videos/
+static/outputs/
+demo_outputs/
+*.mp4
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Ignore test files
+test_*.py
+test_*.png
+test_*.jpg
+
+# Ignore documentation files (keep only essential ones)
+DEPLOYMENT.md
+CHECKLIST.md
+FEATURES.md
+PROJECT_OVERVIEW.md
+PROJECT_SUMMARY.txt
+QUICKSTART.md
+START_HERE.md
+setup.bat
+setup.sh
+demo_generator.py

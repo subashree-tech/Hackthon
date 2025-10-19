@@ -48,8 +48,30 @@ Thumbs.db
 # Application Specific
 static/uploads/*
 static/outputs/*
+static/videos/*
+demo_outputs/*
 !static/uploads/.gitkeep
 !static/outputs/.gitkeep
+
+# Large media files (not needed for API)
+*.mp4
+*.avi
+*.mov
+test_*.png
+test_*.jpg
+test_*.jpeg
+
+# Documentation files (keep essential ones only)
+DEPLOYMENT.md
+CHECKLIST.md
+FEATURES.md
+PROJECT_OVERVIEW.md
+PROJECT_SUMMARY.txt
+QUICKSTART.md
+START_HERE.md
+setup.bat
+setup.sh
+demo_generator.py
 
 # Logs
 *.log
